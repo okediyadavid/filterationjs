@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+    <title>My Contacts</title>
+    <style>
+        .collection-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-name {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">My Contacts</h1>
+        <input type="text" id="filterInput" placeholder="Search Names..." class="input-field">
+        <ul id="names" class="collection with-header">
+            <li class="collection-header"><h5>A</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Adam</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Azam</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ala</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Alek</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Anna</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Aria</a></li>
+            
+            <li class="collection-header"><h5>B</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Bob</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Baby</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Blue</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Black</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Bella</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Bill</a></li>
+
+            <li class="collection-header"><h5>C</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Carl</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Cathy</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Chris</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Cindy</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Claire</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Cameron</a></li>
+
+            <li class="collection-header"><h5>D</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">David</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Dana</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Daisy</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Daniel</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Dylan</a></li>
+
+            <li class="collection-header"><h5>E</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Eve</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Eli</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ella</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Emily</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ethan</a></li>
+
+            <li class="collection-header"><h5>F</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Frank</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Fiona</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Faith</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Felix</a></li>
+
+            <li class="collection-header"><h5>G</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">George</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Gideon</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Grace</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Gavin</a></li>
+
+            <li class="collection-header"><h5>H</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Hank</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Holly</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Harry</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Hannah</a></li>
+
+            <li class="collection-header"><h5>I</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Isaac</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ivy</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ian</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Isla</a></li>
+
+            <li class="collection-header"><h5>J</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Jack</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Jill</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">James</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Jenny</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">John</a></li>
+
+            <li class="collection-header"><h5>K</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Karl</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Kate</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Kevin</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Kim</a></li>
+
+            <li class="collection-header"><h5>L</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Liam</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Lily</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Lucas</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Lucy</a></li>
+
+            <li class="collection-header"><h5>M</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Mia</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Michael</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Michelle</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Mason</a></li>
+
+            <li class="collection-header"><h5>N</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Nathan</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Nina</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Nancy</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Noah</a></li>
+
+            <li class="collection-header"><h5>O</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Olivia</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Oscar</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Owen</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ophelia</a></li>
+
+            <li class="collection-header"><h5>P</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Paul</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Pam</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Peter</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Penny</a></li>
+
+            <li class="collection-header"><h5>Q</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Quinn</a></li>
+
+            <li class="collection-header"><h5>R</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Rachel</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ryan</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Rose</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Robert</a></li>
+
+            <li class="collection-header"><h5>S</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Sam</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Sarah</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Sophia</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Steven</a></li>
+
+            <li class="collection-header"><h5>T</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Tom</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Tina</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Tyler</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Tara</a></li>
+
+            <li class="collection-header"><h5>U</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Uma</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Ursula</a></li>
+
+            <li class="collection-header"><h5>V</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Victor</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Vera</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Violet</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Vincent</a></li>
+
+            <li class="collection-header"><h5>W</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Walter</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Wendy</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">William</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Willow</a></li>
+
+            <li class="collection-header"><h5>X</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Xander</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Xenia</a></li>
+
+            <li class="collection-header"><h5>Y</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Yara</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Yvonne</a></li>
+
+            <li class="collection-header"><h5>Z</h5></li>
+            <li class="collection-item"><a class="contact-name" href="#">Zane</a></li>
+            <li class="collection-item"><a class="contact-name" href="#">Zara</a></li>
+        </ul>
+    </div>
+    <script>
+        // Wait for the DOM to load before running the script
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterInput = document.getElementById('filterInput');
+
+            // Add event listener to filter input
+            filterInput.addEventListener('keyup', filterNames);
+
+            function filterNames() {
+                const filterValue = filterInput.value.toUpperCase();
+                const items = document.querySelectorAll('#names .collection-item');
+
+                items.forEach(item => {
+                    const contactName = item.querySelector('.contact-name').textContent.toUpperCase();
+                    if (contactName.includes(filterValue)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Show/hide headers based on filtered results
+                const headers = document.querySelectorAll('#names .collection-header');
+                headers.forEach(header => {
+                    const nextElement = header.nextElementSibling;
+                    let isVisible = false;
+                    while (nextElement && !nextElement.classList.contains('collection-header')) {
+                        if (nextElement.style.display !== 'none') {
+                            isVisible = true;
+                            break;
+                        }
+                        nextElement = nextElement.nextElementSibling;
+                    }
+                    header.style.display = isVisible ? 'block' : 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
